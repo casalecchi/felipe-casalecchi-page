@@ -1,3 +1,51 @@
 {
-  "welcome": "Bem-vindo ao meu portfólio!"
+  "nav": {
+    "home": "Home",
+    "privacy": "Política de Privacidade"
+  },
+  "home": {
+    "role": "Frontend & iOS Developer",
+    "bio": "Sou um desenvolvedor frontend e iOS. Sou apaixonado por fazer apps e por isso entrei na área de tecnologia. Gosto muito de resolver problemas difíceis e criar soluções valiosas que impactam a vida das pessoas.",
+    "appsTitle": "Aplicativos Publicados"
+  },
+  "appCard": {
+    "privacy": "Política de Privacidade",
+    "download": "OBTER"
+  },
+  "apps": {
+    "brotto": {
+      "tagline": "Gestão local de plantas: fotos e regas sem servidor",
+      "description": "Brotto é um app de monitoramento de plantas que guarda fotos e registros de rega localmente no dispositivo do usuário."
+    }
+  },
+  "footer": {
+    "bio": "Frontend & iOS Developer apaixonado por criar soluções valiosas e aplicativos de alta qualidade para impactar positivamente.",
+    "navigation": "Navegação",
+    "apps": "Aplicativos",
+    "contact": "Contato & Redes",
+    "rights": "Todos os direitos reservados."
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "date": "Última atualização: 27 de Março de 2026",
+    "intro": "A sua privacidade é importante para nós. Esta Política de Privacidade explica como o desenvolvedor <strong>Felipe Casalecchi</strong> coleta, usa e protege suas informações ao utilizar o aplicativo <strong>Brotto</strong> (\"Aplicativo\") e demais serviços associados.",
+    "section1Title": "1. Coleta e Uso de Dados",
+    "section1Intro": "O <strong>Brotto</strong> funciona primariamente como um diário de plantas digital e local.",
+    "s1p1": "<strong>Dados Locais (Fotos e Diário):</strong> As funcionalidades principais do aplicativo acontecem inteiramente no dispositivo móvel. Nenhuma foto ou dado são enviados para servidores externos.",
+    "s1p2": "<strong>Informações Pessoais:</strong> No momento, não coletamos ativamente informações pessoais (como Nome, E-mail ou Conta de Usuário).",
+    "s1p3": "<strong>Dados Sensíveis:</strong> Em atualizações futuras, poderá haver consulta climática, mas nenhum dado sensível é coletado atualmente.",
+    "s1p4": "<strong>Dados de Uso:</strong> Usamos serviços analíticos para obter métricas de retenção anônimas, visando aprimorar o app.",
+    "section2Title": "2. Serviços de Terceiros e Assinaturas",
+    "section2Intro": "Trabalhamos com os seguintes serviços de terceiros:",
+    "s2p1": "<strong>RevenueCat:</strong> Usado para gerenciamento e processamento seguro de assinaturas pagas.",
+    "s2p2": "<strong>Analytics:</strong> Sistemas de rastreamento de uso em segundo plano.",
+    "section3Title": "3. Segurança",
+    "s3p1": "As informações e diários não correm risco de vazamento pois estão contidos no seu aparelho. No entanto, nenhum método pela internet é 100% livre de falhas.",
+    "section4Title": "4. Links para Outros Sites",
+    "s4p1": "O Aplicativo pode conter links de terceiros que não são operados por nós.",
+    "section5Title": "5. Mudanças nesta Política",
+    "s5p1": "Notificaremos eventuais mudanças via aplicativo e alteração desta página.",
+    "section6Title": "6. Contato",
+    "s6p1": "Qualquer dúvida sobre a proteção de dados deve ser direcionada ao e-mail:"
+  }
 }

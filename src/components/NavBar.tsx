@@ -1,37 +1,74 @@
-import { Box, Button, Container, Stack } from '@mui/material';
+import { Box, Button, Container, Stack, Typography } from '@mui/material';
 import type { FC } from 'react';
-import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export const NavBar: FC = () => {
   return (
-    <Container maxWidth="lg">
-      <Stack alignItems="center" direction="row" justifyContent="space-between" sx={{ py: 2 }}>
-        <Box
-          alt="Brotto Logo"
-          component="img"
-          src="/brotto_nobg.png"
-          sx={{ width: 64, height: 63, objectFit: 'contain' }}
-        />
-        <NavBarOptions />
-      </Stack>
-    </Container>
+    <Box
+      sx={{
+        position: 'sticky',
+        top: 0,
+        zIndex: 1100,
+        backgroundColor: 'rgba(10, 10, 11, 0.7)',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
+        borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+        py: 1,
+      }}
+    >
+      <Container maxWidth="lg">
+        <Stack alignItems="center" direction="row" justifyContent="space-between" sx={{ py: 1 }}>
+          <Box
+            component={RouterLink}
+            sx={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
+            to="/"
+          >
+            <Typography
+              sx={{
+                fontWeight: 800,
+                fontSize: '1.25rem',
+                color: 'text.primary',
+                letterSpacing: '-0.02em',
+                transition: 'color 0.2s',
+                '&:hover': {
+                  color: 'primary.main',
+                },
+              }}
+            >
+              Felipe Casalecchi
+            </Typography>
+          </Box>
+          <NavBarOptions />
+        </Stack>
+      </Container>
+    </Box>
   );
 };
 
 const NavBarOptions: FC = () => {
+  const { t } = useTranslation();
   return (
-    <Stack alignItems="center" direction="row" spacing={4}>
-      <Button component={Link} to="/">
-        Home
+    <Stack alignItems="center" direction="row" spacing={3}>
+      <Button
+        component={RouterLink}
+        sx={{
+          color: 'text.secondary',
+          '&:hover': { color: 'text.primary', backgroundColor: 'transparent' },
+        }}
+        to="/"
+      >
+        {t('nav.home')}
       </Button>
-      <Button component={Link} to="/about">
-        About
-      </Button>
-      <Button component={Link} to="/contact">
-        Contact
-      </Button>
-      <Button sx={{ borderRadius: '2rem' }} variant="contained">
-        Download Brotto
+      <Button
+        component={RouterLink}
+        sx={{
+          color: 'text.secondary',
+          '&:hover': { color: 'text.primary', backgroundColor: 'transparent' },
+        }}
+        to="/privacy"
+      >
+        {t('nav.privacy')}
       </Button>
     </Stack>
   );

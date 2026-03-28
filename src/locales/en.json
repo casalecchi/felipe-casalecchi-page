@@ -1,3 +1,51 @@
 {
-  "welcome": "Welcome to my portfolio!"
+  "nav": {
+    "home": "Home",
+    "privacy": "Privacy Policy"
+  },
+  "home": {
+    "role": "Frontend & iOS Developer",
+    "bio": "I am a frontend and iOS developer. I am passionate about making apps and that's why I entered the tech field. I love solving difficult problems and creating valuable solutions that impact people's lives.",
+    "appsTitle": "Published Apps"
+  },
+  "appCard": {
+    "privacy": "Privacy Policy",
+    "download": "GET"
+  },
+  "apps": {
+    "brotto": {
+      "tagline": "Local plant care: photos and logs without servers",
+      "description": "Brotto is a plant monitoring app that keeps your photos and watering logs safely on your private device."
+    }
+  },
+  "footer": {
+    "bio": "Frontend & iOS Developer passionate about creating valuable solutions and high-quality crafting to make a positive impact.",
+    "navigation": "Navigation",
+    "apps": "Apps",
+    "contact": "Contact & Social",
+    "rights": "All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "date": "Last update: March 27, 2026",
+    "intro": "Your privacy is important to us. This Privacy Policy outlines how the developer <strong>Felipe Casalecchi</strong> collects, uses, and safeguards your information when using the <strong>Brotto</strong> application (\"App\").",
+    "section1Title": "1. Data Collection and Usage",
+    "section1Intro": "<strong>Brotto</strong> functions primarily as a digital, local plant journal.",
+    "s1p1": "<strong>Local Data (Photos & Logs):</strong> Core functionalities happen exclusively on your device. We never upload your plant photos to external servers.",
+    "s1p2": "<strong>Personal Information:</strong> We do not actively collect personally identifiable information (PII) such as Name, Email, or User Accounts.",
+    "s1p3": "<strong>Sensitive Data:</strong> We do not collect health or exact location data (a weather feature may be added soon without breaching anonymity rules).",
+    "s1p4": "<strong>Usage Analytics:</strong> We use analytical services to track anonymous user retention metrics to help improve stability.",
+    "section2Title": "2. Third-Party Services & Subscriptions",
+    "section2Intro": "The app relies on trusted third-party services:",
+    "s2p1": "<strong>RevenueCat:</strong> Used to manage and securely process in-app subscriptions.",
+    "s2p2": "<strong>Analytics:</strong> Background tracking metrics as stated prior.",
+    "section3Title": "3. Security",
+    "s3p1": "Your offline journal content cannot be leaked from our servers because they are solely on your device. However, no internet transmission is 100% secure.",
+    "section4Title": "4. Links to Other Sites",
+    "s4p1": "The App may contain third-party links not run by us. We advise checking their privacy terms.",
+    "section5Title": "5. Policy Changes",
+    "s5p1": "Changes to this document will be reflected here and potentially communicated via App release notes.",
+    "section6Title": "6. Contact",
+    "s6p1": "If you have questions regarding data privacy, please email us at:"
+  }
 }
