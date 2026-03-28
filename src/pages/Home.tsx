@@ -39,7 +39,11 @@ export const Home = () => {
                   background: 'linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
-                  mb: 2
+                  fontSize: { xs: '3rem', sm: '4rem', md: '5rem' }, // Evita que quebre em telas pequenas
+                  fontWeight: 800,
+                  letterSpacing: { xs: '-0.03em', md: '-0.04em' },
+                  lineHeight: 1.1,
+                  mb: { xs: 1, md: 2 }
                 }}
               >
                 Felipe Casalecchi
@@ -47,7 +51,12 @@ export const Home = () => {
               <Typography 
                 variant="h4" 
                 color="primary" 
-                sx={{ mb: 4, fontWeight: 600, letterSpacing: '-0.01em' }}
+                sx={{ 
+                  mb: { xs: 3, md: 4 }, 
+                  fontWeight: 600, 
+                  letterSpacing: '-0.01em',
+                  fontSize: { xs: '1.25rem', md: '2.125rem' } // Reduz o subtítulo no mobile
+                }}
               >
                 {t('home.role')}
               </Typography>

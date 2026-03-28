@@ -95,7 +95,7 @@ export const Footer: FC = () => {
           <Typography variant="body2" color="text.secondary">
             © {new Date().getFullYear()} Felipe Casalecchi. {t('footer.rights')}
           </Typography>
-          <Box alt="Brotto Logo" component="img" src="/brotto_nobg.png" sx={{ width: 32, height: 32, opacity: 0.5, filter: 'grayscale(100%)' }} />
+          <Box alt="Brotto Logo" component="img" src={`${import.meta.env.BASE_URL}brotto_nobg.png`} sx={{ width: 32, height: 32, opacity: 0.5, filter: 'grayscale(100%)' }} />
         </Box>
       </Container>
     </Box>

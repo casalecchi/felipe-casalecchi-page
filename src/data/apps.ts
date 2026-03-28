@@ -41,7 +41,7 @@ const apps: AppMetadata[] = [
     longDescription:
       'Brotto fornece um diário completo para suas plantas, com notificações locais, histórico de rega e fotos armazenadas localmente. ' +
       'Todas as informações permanecem no seu dispositivo, sem upload para servidores externos, garantindo privacidade e controle total.',
-    screenshot: '/brotto.png',
+    screenshot: `${import.meta.env.BASE_URL}brotto.png`,
     features: [
       {
         id: 'watering-log',
@@ -85,7 +85,7 @@ const apps: AppMetadata[] = [
       description:
         'Brotto mantém fotos e registros de rega localmente no seu celular, com foco em privacidade e controles offline.',
       keywords: ['brottyo', 'plant care', 'local plant journal', 'watering reminders', 'privacy'],
-      ogImage: '/brotto.png',
+      ogImage: `${import.meta.env.BASE_URL}brotto.png`,
       ogType: 'website',
       twitterCard: 'summary_large_image',
     },

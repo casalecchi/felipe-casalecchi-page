@@ -14,11 +14,16 @@ export const NavBar: FC = () => {
         backdropFilter: 'blur(12px)',
         WebkitBackdropFilter: 'blur(12px)',
         borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
-        py: 1,
+        py: { xs: 0.5, sm: 1 },
       }}
     >
       <Container maxWidth="lg">
-        <Stack alignItems="center" direction="row" justifyContent="space-between" sx={{ py: 1 }}>
+        <Stack 
+          alignItems="center" 
+          direction="row" 
+          justifyContent="space-between" 
+          sx={{ py: 1 }}
+        >
           <Box
             component={RouterLink}
             sx={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
@@ -27,9 +32,10 @@ export const NavBar: FC = () => {
             <Typography
               sx={{
                 fontWeight: 800,
-                fontSize: '1.25rem',
+                fontSize: { xs: '1rem', sm: '1.25rem' }, // Menor no mobile
                 color: 'text.primary',
                 letterSpacing: '-0.02em',
+                lineHeight: 1,
                 transition: 'color 0.2s',
                 '&:hover': {
                   color: 'primary.main',
@@ -49,11 +55,14 @@ export const NavBar: FC = () => {
 const NavBarOptions: FC = () => {
   const { t } = useTranslation();
   return (
-    <Stack alignItems="center" direction="row" spacing={3}>
+    <Stack alignItems="center" direction="row" spacing={{ xs: 1.5, sm: 3 }}>
       <Button
         component={RouterLink}
         sx={{
           color: 'text.secondary',
+          minWidth: 'auto',
+          px: { xs: 1, sm: 2 },
+          fontSize: { xs: '0.875rem', sm: '0.875rem' },
           '&:hover': { color: 'text.primary', backgroundColor: 'transparent' },
         }}
         to="/"
@@ -64,6 +73,9 @@ const NavBarOptions: FC = () => {
         component={RouterLink}
         sx={{
           color: 'text.secondary',
+          minWidth: 'auto',
+          px: { xs: 1, sm: 2 },
+          fontSize: { xs: '0.875rem', sm: '0.875rem' },
           '&:hover': { color: 'text.primary', backgroundColor: 'transparent' },
         }}
         to="/privacy"
