@@ -65,19 +65,6 @@ const NavBarOptions: FC = () => {
           fontSize: { xs: '0.875rem', sm: '0.875rem' },
           '&:hover': { color: 'text.primary', backgroundColor: 'transparent' },
         }}
-        to="/"
-      >
-        {t('nav.home')}
-      </Button>
-      <Button
-        component={RouterLink}
-        sx={{
-          color: 'text.secondary',
-          minWidth: 'auto',
-          px: { xs: 1, sm: 2 },
-          fontSize: { xs: '0.875rem', sm: '0.875rem' },
-          '&:hover': { color: 'text.primary', backgroundColor: 'transparent' },
-        }}
         to="/privacy"
       >
         {t('nav.privacy')}
