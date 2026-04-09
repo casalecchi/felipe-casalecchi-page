@@ -52,9 +52,6 @@ export const PrivacyPolicy: FC = () => {
           <li>
             <Typography variant="body1" sx={{ mb: 1 }} dangerouslySetInnerHTML={{ __html: t('privacy.s1p3') }} />
           </li>
-          <li>
-            <Typography variant="body1" sx={{ mb: 1 }} dangerouslySetInnerHTML={{ __html: t('privacy.s1p4') }} />
-          </li>
         </ul>
       </Box>
 
@@ -64,15 +61,7 @@ export const PrivacyPolicy: FC = () => {
         <Typography gutterBottom variant="h5" color="primary.main" sx={{ fontWeight: 700 }}>
           {t('privacy.section2Title')}
         </Typography>
-        <Typography paragraph variant="body1" dangerouslySetInnerHTML={{ __html: t('privacy.section2Intro') }} />
-        <ul>
-          <li>
-            <Typography variant="body1" sx={{ mb: 1 }} dangerouslySetInnerHTML={{ __html: t('privacy.s2p1') }} />
-          </li>
-          <li>
-            <Typography variant="body1" sx={{ mb: 1 }} dangerouslySetInnerHTML={{ __html: t('privacy.s2p2') }} />
-          </li>
-        </ul>
+        <Typography paragraph variant="body1" dangerouslySetInnerHTML={{ __html: t('privacy.s2p1') }} />
       </Box>
 
       <Divider sx={{ my: 4 }} />
@@ -81,7 +70,18 @@ export const PrivacyPolicy: FC = () => {
         <Typography gutterBottom variant="h5" color="primary.main" sx={{ fontWeight: 700 }}>
           {t('privacy.section3Title')}
         </Typography>
-        <Typography paragraph variant="body1" dangerouslySetInnerHTML={{ __html: t('privacy.s3p1') }} />
+        <Typography paragraph variant="body1" dangerouslySetInnerHTML={{ __html: t('privacy.section3Intro') }} />
+        <ul>
+          <li>
+            <Typography variant="body1" sx={{ mb: 1 }} dangerouslySetInnerHTML={{ __html: t('privacy.s3p1') }} />
+          </li>
+          <li>
+            <Typography variant="body1" sx={{ mb: 1 }} dangerouslySetInnerHTML={{ __html: t('privacy.s3p2') }} />
+          </li>
+          <li>
+            <Typography variant="body1" sx={{ mb: 1 }} dangerouslySetInnerHTML={{ __html: t('privacy.s3p3') }} />
+          </li>
+        </ul>
       </Box>
 
       <Divider sx={{ my: 4 }} />
@@ -90,7 +90,14 @@ export const PrivacyPolicy: FC = () => {
         <Typography gutterBottom variant="h5" color="primary.main" sx={{ fontWeight: 700 }}>
           {t('privacy.section4Title')}
         </Typography>
-        <Typography paragraph variant="body1" dangerouslySetInnerHTML={{ __html: t('privacy.s4p1') }} />
+        <ul>
+          <li>
+            <Typography variant="body1" sx={{ mb: 1 }} dangerouslySetInnerHTML={{ __html: t('privacy.s4p1') }} />
+          </li>
+          <li>
+            <Typography variant="body1" sx={{ mb: 1 }} dangerouslySetInnerHTML={{ __html: t('privacy.s4p2') }} />
+          </li>
+        </ul>
       </Box>
 
       <Divider sx={{ my: 4 }} />
@@ -110,7 +117,7 @@ export const PrivacyPolicy: FC = () => {
         </Typography>
         <Typography paragraph variant="body1" dangerouslySetInnerHTML={{ __html: t('privacy.s6p1') }} />
         <Typography variant="h6" color="text.primary" sx={{ mt: 2, fontWeight: 700 }}>
-          felipevilela191@gmail.com
+          <a href="mailto:brotto.app@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>brotto.app@gmail.com</a>
         </Typography>
       </Box>
     </Container>
