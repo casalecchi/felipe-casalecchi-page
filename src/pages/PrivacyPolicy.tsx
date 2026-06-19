@@ -81,6 +81,9 @@ export const PrivacyPolicy: FC = () => {
           <li>
             <Typography variant="body1" sx={{ mb: 1 }} dangerouslySetInnerHTML={{ __html: t('privacy.s3p3') }} />
           </li>
+          <li>
+            <Typography variant="body1" sx={{ mb: 1 }} dangerouslySetInnerHTML={{ __html: t('privacy.s3p4') }} />
+          </li>
         </ul>
       </Box>
 
